@@ -8,7 +8,7 @@ const HOST = process.env.HOST
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello this is Sonia and I m testing real time deployments on Qoddi!');
+  res.send('Hello this is Sonia and I m testing real time deployments on Qoddi!!');
 });
 
 app.listen(PORT, HOST);
