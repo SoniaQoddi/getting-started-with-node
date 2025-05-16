@@ -16,5 +16,6 @@ COPY . .
 # Expose the port the app runs on
 EXPOSE 3000
 
+COPY SSKK
 # Start the application
 CMD ["node", "server.js"]
