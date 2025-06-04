@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const fetch = require('node-fetch');
 const PORT = process.env.PORT || 8080;
-const HOST = process.env.HOST;
+const HOST = process.env.HOST || '0.0.0.0';
 
 // App
 const app = express();
