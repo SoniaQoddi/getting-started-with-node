@@ -8,7 +8,8 @@ const HOST = process.env.HOST
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello this is Sonia and I m testing real time deployments on Qoddi!!');
+  const currentDate = new Date().toLocaleString();
+  res.send(`Hello this is Sonia and I m testing real time deployments on Qoddi!!<br>Current date and time: ${currentDate}`);
 });
 
 app.listen(PORT, HOST);
